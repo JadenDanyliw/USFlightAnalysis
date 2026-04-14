@@ -14,7 +14,7 @@ The "master-location-identifier.csv" dataset was obatined from WeatherGraphics a
 
 ## 2024combining.R
 
-This included R code takes each of the 12 monthly BTS On-Time Performance datasets and combines them into one file, requiring all 12 datasets in the working directory. This dataset is exported as "2024combined.csv" and is included in **Google Drive** 
+This included R code takes each of the 12 monthly BTS On-Time Performance datasets and combines them into one file, requiring all 12 datasets in the working directory. This dataset is exported as "2024combined.csv", which is included in **Google Drive** 
 
 ## newdatacleaning.R
 
@@ -27,15 +27,25 @@ This included R code completes the cleaning process outlined in Section 2.2 of t
 - Joining flights with previous-day and flight-day weather data
 - Creation of direction, airport crowdedness, and holiday indicator variables.
 
-Requires all 31 GSOD weather .csv files, "2024combined.csv", "airports.csv", and "master-location-identifier.csv" in the working directory. Exports the final dataset as "data_final.csv" and is included in **Google Drive**
+Requires all 31 GSOD weather .csv files, "2024combined.csv", "airports.csv", and "master-location-identifier.csv" in the working directory. Exports the final dataset as "data_final.csv", which is included in **Google Drive**.
 
 ## RQ2.R
 
-This included R code performs the statistical modelling techniques for research question 2, including the one-sided two-sample z-test for proportions and the fixed effect model estimation. Requires "data_final.csv" in the working directory
+This included R code performs the statistical modelling techniques for research question 2, including the one-sided two-sample z-test for proportions and the fixed effect model estimation. Requires "data_final.csv" in the working directory.
 
 ## randomforest.R
 
-This included R code
+This included R code performs the probability Random Forest modelling procedure outlined in Sections 2.5 and 3.2 of the report. This involves:
+- Training and testing data split
+- 5-fold cross-validation for model parameter tuning
+- Creation of Model 1 (300 tree bootstrap replacement sampling)
+- Creation of Model 2 (300 tree balanced bootstrap replacement sampling)
+- Creation of Model 3 (75 tree bootstrap replacement sampling)
+- ROC curves
+- Threshold metric comparisons for classification
+- Variable importance plots
+
+Requires "data_final.csv" in the working directory. Exports Model 3 as an RDS file "rfmodel1_75tree.rds", which is included in **Google Drive**.
 
 ## app.R
 
