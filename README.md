@@ -31,11 +31,11 @@ Requires all 31 GSOD weather .csv files, "2024combined.csv", "airports.csv", and
 
 ## RQ2.R
 
-This included R code performs the statistical modelling techniques for research question 2, including the one-sided two-sample z-test for proportions and the fixed effect model estimation. Requires "data_final.csv" in the working directory.
+This included R code performs the statistical modelling techniques for research question 2, outlined in Sections 2.5 and 3.2 of the report. This includes the one-sided two-sample z-test for proportions and the fixed effect model estimation. Requires "data_final.csv" in the working directory.
 
 ## randomforest.R
 
-This included R code performs the probability Random Forest modelling procedure outlined in Sections 2.5 and 3.2 of the report. This involves:
+This included R code performs the probability Random Forest modelling procedure and analysis outlined in Sections 2.5 and 3.3 of the report. This involves:
 - Training and testing data split
 - 5-fold cross-validation for model parameter tuning
 - Creation of Model 1 (300 tree bootstrap replacement sampling)
@@ -49,4 +49,4 @@ Requires "data_final.csv" in the working directory. Exports Model 3 as an RDS fi
 
 ## app.R
 
-This included R code
+This included R code is the code to create the R Shiny application for real-time use of Model 3. Included is user input fields, calculation of variables needed for the model based on inputted values (such as distance, holiday, departure hour block), probability prediction using Model 3, and output. Requires "rfmodel1_75tree.rds", "choices.rds" (describes the available choices for users in drop-down menus) and "airports.parquet" (airport metadata) to be in the working directory. To run locally, click "Run App" with the aforementioned working directory setup, or go to https://danyliw-maclean-malzar-data-501.shinyapps.io/flight_prediction/ to run over the web. Instructions for inputting variables are found in Tableau research question 3 analysis at https://public.tableau.com/app/profile/jensen.maclean/viz/data_501/Overview
