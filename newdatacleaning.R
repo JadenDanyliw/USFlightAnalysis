@@ -141,7 +141,7 @@ data.day.before[floor(runif(1, 1, 2900000)),] |>
 
 ### GSOD Weather Data ###
 
-setwd("C:/Users/jdany/data501/gsod24")
+# setwd("C:/Users/jdany/data501/gsod24")
 
 # 0, 7, 13, 18, 20, 24, 31, 35, 42, 46, 53, 57, 64, 68, 74, 78, 84, 88, 95, 102, 110, 118, 125, 132, 133, 134, 135, 136, 137
 # This is the order of character spacing/starting values for manual conversion 
@@ -240,7 +240,7 @@ nrow(combined.all.2024) # = 15*366
 
 
 # 2023 data for december 31
-setwd("C:/Users/jdany/data501/gsod23")
+# setwd("C:/Users/jdany/data501/gsod23")
 
 
 # List of 2023 csv files in the gsod23 folder 
