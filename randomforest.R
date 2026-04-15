@@ -93,7 +93,7 @@ rf1.prob.roc = roc(response = data.test$DepDel15,
 plot(rf1.prob.roc, print.auc =T, col = "#69AAA5")
 # 0.727
 
-# Variable importance
+# Variable importance (not the exact graph visualized in the report)
 vip(rf1.prob, num_features = 31, geom = c("point"), 
     aesthetics = list(col = "#69AAA5", size=2))
 
@@ -239,7 +239,7 @@ rf3.prob.roc = roc(response = data.test$DepDel15,
 plot(rf3.prob.roc, print.auc =T, col = "#69AAA5")
 # 0.723
 
-# Variable importance
+# Variable importance (not the exact graph visualized in the report)
 vip(rf3.prob, num_features = 31, geom = c("point"), 
     aesthetics = list(col = "#69AAA5"))
 
